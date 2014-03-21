@@ -1,6 +1,13 @@
-require 'simplecov'
+# Uncomment while using Coveralls
+require 'coveralls'
+Coveralls.wear!
+# Coveralls.wear!('rails') # For RailsApp
+
+# Uncomment while using CodeClimate, don't forget set token
 require 'codeclimate-test-reporter'
 CodeClimate::TestReporter.start
+
+require 'simplecov'
 
 # Configure Rails Environment
 ENV["RAILS_ENV"] = "test"
