@@ -4,9 +4,9 @@ Translate your databases names
 [badge-travis]: https://travis-ci.org/werein/i18n-tasks-ar.svg?branch=master
 [badge-coveralls]: https://coveralls.io/repos/werein/i18n-tasks-ar/badge.png?branch=master
 [badge-gemnasium]: https://gemnasium.com/werein/i18n-tasks-ar.svg
-[badge-codeclimate]: https://codeclimate.com/github/werein/i18n-tasks-ar.png
+[badge-code-climate]: https://codeclimate.com/github/werein/i18n-tasks-ar.png
 
 [travis]: https://travis-ci.org/werein/i18n-tasks-ar
 [coveralls]: https://coveralls.io/r/werein/i18n-tasks-ar?branch=master
 [gemnasium]: https://gemnasium.com/werein/i18n-tasks-ar
-[codeclimate]: https://codeclimate.com/github/werein/i18n-tasks-ar
+[code-climate]: https://codeclimate.com/github/werein/i18n-tasks-ar
