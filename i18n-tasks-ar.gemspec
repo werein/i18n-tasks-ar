@@ -19,5 +19,5 @@ Gem::Specification.new do |s|
   s.add_dependency 'rails', '~> 4.0'
 
   s.add_development_dependency 'sqlite3'
-  s.add_development_dependency 'tuberack'
+  s.add_development_dependency 'tuberack', '>= 1.0.2'
 end
