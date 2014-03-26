@@ -5,7 +5,7 @@ module I18n
         class << self
           def model lang
             result = Model.final_hash(lang).to_yaml
-            File.open("#{Rails.root}/config/locales/activerecord.models.#{lang}.yml", 'w+') {|f| f.write(result) }
+            File.open("config/locales/activerecord.models.#{lang}.yml", 'w+') {|f| f.write(result) }
           end
 
           def models
