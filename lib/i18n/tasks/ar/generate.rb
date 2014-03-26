@@ -12,6 +12,16 @@ module I18n
           def models
             I18n::Tasks::Ar::Config.locales.each{|locale| model(locale)}
           end
+
+          def attribute lang
+            result = Attribute.final_hash(lang).to_yaml
+            FileUtils.mkdir_p('config/locales') unless File.exists?('config/locales')
+            File.open("config/locales/activerecord.attributes.#{lang}.yml", 'w+') {|f| f.write(result) }
+          end
+
+          def attributes
+            I18n::Tasks::Ar::Config.locales.each{|locale| attribute(locale)}
+          end
         end
       end
     end
