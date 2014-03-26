@@ -4,10 +4,11 @@ describe 'models' do
   before do 
     I18n::Tasks::Ar::Model.stubs(:hash).returns({'class' => { 'one' => 'Class', 'other' => 'Classes' }})
   end
+  after { FileUtils.rm_rf 'config' }
 
   it 'should save yaml' do 
     I18n::Tasks::Ar::Generate.model('en')
-    File.exist?("#{Rails.root}/config/locales/activerecord.models.en.yml").must_equal true
+    File.exist?('config/locales/activerecord.models.en.yml').must_equal true
   end
 
   it 'should create multiple localse' do 
