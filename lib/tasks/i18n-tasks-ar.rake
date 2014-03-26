@@ -5,7 +5,7 @@
 
 namespace :i18n_tasks_ar do
   desc 'Rebuild entire model translation file'
-  task :rebuild_models do
+  task rebuild_models: :environment do
     I18n::Tasks::Ar::Generate.models
   end
 end
