@@ -1,6 +1,9 @@
 # I18n::Tasks::AR [![Build Status][badge-travis]][travis] [![Coverage Status][badge-coveralls]][coveralls] [![Dependency Status][badge-gemnasium]][gemnasium] [![Code Climate][badge-code-climate]][code-climate]
 Translate your databases names
 
+## Rails Engine
+Using inside engine? Load tasks - `load 'tasks/i18n-tasks-ar.rake'` in your `Rakefile`
+
 [badge-travis]: https://travis-ci.org/werein/i18n-tasks-ar.svg?branch=master
 [badge-coveralls]: https://coveralls.io/repos/werein/i18n-tasks-ar/badge.png?branch=master
 [badge-gemnasium]: https://gemnasium.com/werein/i18n-tasks-ar.svg
