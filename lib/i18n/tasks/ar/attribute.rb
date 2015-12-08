@@ -10,6 +10,7 @@ module I18n
           # 
           def names
             result = {}
+            Rails.application.eager_load! if Rails.env == 'development' rescue true
             ActiveRecord::Base.descendants.each do |model|
               result[model.name] = model.attribute_names
             end

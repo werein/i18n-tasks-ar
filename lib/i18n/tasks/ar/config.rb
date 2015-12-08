@@ -13,7 +13,7 @@ module I18n
 
           if file
             config = YAML.load_file(file)
-            self.locales = config['locales']
+            self.locales = config['locales'] rescue ['en']
           else
             self.locales = ['en']
           end

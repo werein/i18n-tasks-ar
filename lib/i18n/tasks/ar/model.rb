@@ -4,6 +4,7 @@ module I18n
       module Model
         class << self
           def names
+            Rails.application.eager_load! if Rails.env == 'development' rescue true
             ActiveRecord::Base.descendants.map(&:name)
           end
 

@@ -7,6 +7,10 @@ Translate your databases names
 ## Rails Engine
 Using inside engine? Load tasks - `load 'tasks/i18n-tasks-ar.rake'` in your `Rakefile`
 
+dont forget to set locales setting in either
+'config/i18n-tasks.yml' or 'config/i18n-tasks-ar.yml'
+locales = ['en']
+
 [badge-version]: https://badge.fury.io/rb/tuberack.png
 [badge-travis]: https://travis-ci.org/werein/i18n-tasks-ar.svg?branch=master
 [badge-coveralls]: https://coveralls.io/repos/werein/i18n-tasks-ar/badge.png?branch=master
